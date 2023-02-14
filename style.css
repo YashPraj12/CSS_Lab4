@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Sacramento&family=Varela+Round&display=swap");
+/************************* TYPOGRAPHY***************************************/
+/*  applying bold to odd list items of selected tag */
+main ul li:nth-of-type(odd) {
+  font-weight: bold;
+}
+/* applying #333 to all the text elements except p tag using not()
+My name is yash . I did the task with not() 
+don't forget the bonus point please
+*/
+
+.wrapper main section + p {
+  font-size: 1.3rem;
+}
+
+/**************************LAYOUT*****************************************/
+
+.wrapper {
+    /* 5. setting width to 80viewport of using vw as measurement*/
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2rem;
+  /* 5. adding background colour to div */
+  background-color: #1b2430;
+  border: 2px solid black;
+}
+
+.wrapper header {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #567189;
+}
+
+main > section > figure > img {
+  /*4. making image responsive*/
+  width: 25%;
+  max-width: 100%;
+  border-radius: 2rem;
+  float: right;
+  
+  /* 3.using filter funtion on img*/
+  filter: invert(10%) contrast(150%) saturate(90%);
+  border: 10px solid #2b2b2b;
+}
+main > section > figure > img:hover {
+  /* 3. applying filter function on image */
+  filter: invert(6%);
+}
+
+/***************************STYLES**************************************/
+body {
+  color: #fff;
+  /*  2.adding a background image*/
+  background-image: url(./background.jpg); /*image source: www.pixel.com*/
+  background-size: 100%;
+}
+
+#h1 {
+  font-size: 4rem;
+}
+
+p,
+li {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #567189;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #567189;
+}
+main section ul li {
+  width: 10%;
+  background-color: #2b2b2b;
+}
+main section ul li:nth-of-type(odd) {
+  background-color: darkslategray;
+}
